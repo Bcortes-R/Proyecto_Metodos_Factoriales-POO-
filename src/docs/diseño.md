@@ -37,3 +37,30 @@ Clase ControladorCalculadora:
 4. Modelo realiza cálculo y devuelve resultado
 5. Controlador pasa resultado a vista
 6. Vista muestra resultado al usuario
+
+## Diagramas UML
+
+### Diagrama de Clases (Descripción textual)
+- **CalculadoraMatematica**
+  - +exponencial(x: float) → float
+  - +seno(x: float) → float
+  - +coseno(x: float) → float
+  - +arcoseno(x: float) → float
+  - +arcocoseno(x: float) → float
+  - +senoh(x: float) → float
+  - +cosenh(x: float) → float
+  - +factorial(n: int) → int
+  - +potencia(x: float, n: int) → float
+
+- **ControladorCalculadora**
+  - +calcular(operacion: str, valor: float) → float
+
+- **VistaConsola**
+  - +mostrar_menu()
+  - +solicitar_datos()
+  - +mostrar_resultado(resultado: float)
+
+- **VistaWeb (Flask)**
+  - HTML + rutas Python con Flask
+
+_Nota: Puedes generar este diagrama gráficamente usando PlantUML o herramientas como Lucidchart._
